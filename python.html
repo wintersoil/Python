@@ -1,0 +1,2178 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <script>
+        body {
+          font-family: 'Inconsolata', sans-serif;
+          background-color: #404040;
+          color: white;
+          font-size: 20px;
+          margin: 0px;
+        }
+        .arguments-python{
+          color: coral;
+        }
+        .code {
+          background-color: #1b1b1b;
+          color: white;
+          padding: 20px 28px;
+          font-size: 20px;
+          font-weight: 300;
+          border-radius: 10px;
+          box-shadow: 3px 3px 7px #111, -3px 3px 6px #111;
+          justify-content: flex-start;
+            line-height: 1.4;
+        }
+        .code-outer {
+          display: flex;
+          margin: 20px 0px;
+          justify-content: center;
+        }
+        .string-python {
+          color: rgb(138,201,114);
+        }
+        .if-python {
+          color: rgb(212,101,226);
+        }
+        .numbers-python {
+          color: rgb(216,153,90);
+        }
+        .problem-statement {
+            background-color: #1e2027;
+            border: 1px solid #585858;
+            border-radius: 5px;
+            box-shadow: 3px 4px 5px #222, -2px -2px 4px #333;
+            overflow: hidden;
+        }
+        .problem-statement-container {
+          display: flex;
+          font-family: "Rajdhani";
+          justify-content: center;
+        }
+        .range-python{
+          color: rgb(43,184,197);
+        }
+        hr {
+          border: 1px solid #353535;
+        }
+        .comment-python
+        {
+          color: rgb(90,97,112);
+        }
+        .intro-page {
+            height: 100vh;
+            width: 100vw;
+            background-color: #2196F3;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .intro-page img {
+          height: 200px;
+        }
+        .blog-title {
+          font-size: 60px;
+          color: rgb(248,211,0);
+          font-family: Rajdhani;
+        }
+        .hacker-rank {
+          flex-basis: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+          font-size: 60px;
+          color: white;
+          font-family: Rajdhani;
+        }
+        .hacker-rank-logo {
+          flex-basis: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        .main-content {
+        }
+        .main-title {
+          display: flex;
+          justify-content: center;
+          color: #2196F3;
+          font-family: "Rajdhani";
+          margin-block-end: 0;
+        }
+        .main-subtitle {
+          display: flex;
+          justify-content: center;
+          color: #2196F3;
+          font-family: Rajdhani;
+          margin-block-start: 4px;
+        }
+        .function-operate-python{
+          color: rgb(239,97,110)
+        }
+        .operation-python{
+          color: rgb(79,172,246)
+        }
+        .exercise-number {
+            background-color: #3e486b;
+            border-bottom: 1px solid #65666d;
+            padding: 10px 18px;
+        }
+        .exercise-description {
+          padding: 10px 18px;
+        }
+        .exercise-number a {
+          color: white;
+          text-decoration: none;
+        }
+        .exercise-number a:hover {
+          color: #d8d8d8;
+          text-decoration: underline;
+        }
+    </script>
+</head>
+<body>
+<div class="intro-page">
+    <div class="intro-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/768px-Python.svg.png"/>
+    </div>
+    <div class="blog-title">
+        Python
+    </div>
+    <div class="hacker-rank">
+        <div class="hacker-rank-logo">
+            <img src="https://d3keuzeb2crhkn.cloudfront.net/hackerrank/assets/styleguide/logo_wordmark-f5c5eb61ab0a154c3ed9eda24d0b9e31.svg"/>
+        </div>
+        <div class="hacker-rank-title">
+            Hacker Rank
+        </div>
+    </div>
+</div>
+<div class="main-content">
+    <div class="main-title">
+        <h2>Python Examples:</h2>
+    </div>
+    <div class="main-subtitle">
+        <h3>Hacker Rank: <span style="color: white;font-size:18px">Click on the problem number to take you to the Hacker Rank problem</span></h3>
+    </div>
+    <hr>
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-hello-world/problem" target="_blank">
+                    Problem 1
+                </a>
+            </div>
+            <div class="exercise-description">
+                Print Hello World! to the screen
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">print</span>(<span class="string-python">"Hello, World!"</span>)
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            stringy = <span class="string-python">"Hello, World!"</span><br>
+            <span class="if-python">print</span>(stringy)
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-if-else/problem" target="_blank">
+                    Problem 2
+                </a>
+            </div>
+            <div class="exercise-description">
+                <ul>
+                    <li>If n is odd, print Weird</li>
+                    <li>If n is even and in the inclusive range of 2 to 5, print Not Weird</li>
+                    <li>If n is even and in the inclusive range of 6 to 20, print Weird</li>
+                    <li>If n is even and greater than 20, print Not Weird</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">if</span> n % <span class="numbers-python">2</span> == <span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Weird"</span>)<br>
+            <span class="if-python">elif</span> n % <span class="numbers-python">2</span> == <span class="numbers-python">0</span> and n >= <span class="numbers-python">2</span> and n <= <span class="numbers-python">5</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Not Weird"</span>)<br>
+            <span class="if-python">elif</span> n % <span class="numbers-python">2</span> == <span class="numbers-python">0</span> and n >= <span class="numbers-python">6</span> and n <= <span class="numbers-python">20</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Weird"</span>)<br>
+            <span class="if-python">elif</span> n % <span class="numbers-python">2</span> == <span class="numbers-python">0</span> and n > <span class="numbers-python">20</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Not Weird"</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-arithmetic-operators/problem" target="_blank">
+                    Problem 3
+                </a>
+            </div>
+            <div class="exercise-description">
+                The provided code stub reads two integers from STDIN,  and . Add code to print three lines where:
+                <ul>
+                    <li>The first line contains the sum of the two numbers.</li>
+                    <li>The second line contains the difference of the two numbers (first - second).</li>
+                    <li>The third line contains the product of the two numbers.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">print</span>(a+b)<br>
+            <span class="if-python">print</span>(a-b)<br>
+            <span class="if-python">print</span>(a*b)<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-division/problem" target="_blank">
+                    Problem 4
+                </a>
+            </div>
+            <div class="exercise-description">
+                The provided code stub reads two integers, a and b, from STDIN.<br>
+
+                Add logic to print two lines.
+                <ul>
+                    <li>The first line should contain the result of integer division, a // b.</li>
+                    <li>The second line should contain the result of float division, a / b.</li>
+                </ul>
+
+                No rounding or formatting is necessary.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">print</span>(a//b)<br>
+            <span class="if-python">print</span>(a/b)
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-loops/problem" target="_blank">
+                    Problem 5
+                </a>
+            </div>
+            <div class="exercise-description">
+                The provided code stub reads an integer, n, from STDIN.<br>For all non-negative integers i &lt; n, print i^2.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">0</span>,n):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(i**<span class="numbers-python">2</span>)
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/write-a-function/problem" target="_blank">
+                    Problem 6
+                </a>
+            </div>
+            <div class="exercise-description">
+                An extra day is added to the calendar almost every four years as February 29,<br> and the day is called a leap day. It corrects the calendar for the fact that our planet<br> takes approximately 365.25 days to orbit the sun.<br> A leap year contains a leap day.
+
+                In the Gregorian calendar, three conditions are used<br> to identify leap years:<br>
+                <ul>
+                    <li>
+                        The year can be evenly divided by 4, is a leap year, unless:</li>
+                    <li>The year can be evenly divided by 100, it is NOT a leap year, unless</li>
+                    <li>
+                        The year is also evenly divisible by 400. Then it is a leap year.</li>
+                </ul>
+                This means that in the Gregorian calendar, the years 2000 and 2400 are leap years,<br> while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> is_leap(<span class="numbers-python">year</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;leap = <span class="numbers-python">False</span><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment-python"># Write your logic here</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span>(year % <span class="numbers-python">400</span> == <span class="numbers-python">0</span>) :<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leap = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span>(year % <span class="numbers-python">100</span> == <span class="numbers-python">0</span>) :<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leap = <span class="numbers-python">False</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span>(year % <span class="numbers-python">4</span> == <span class="numbers-python">0</span>) :<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;leap = <span class="numbers-python">True</span><br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> leap<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-print/problem" target="_blank">
+                    Problem 7
+                </a>
+            </div>
+            <div class="exercise-description">
+                The included code stub will read an integer, n, from STDIN.<br>
+
+                Without using any string methods, try to print the following:<br>
+                123 ... n<br>
+
+                Note that "..." represents the consecutive values in between.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">1</span>, n+<span class="numbers-python">1</span>):<br>
+            <span class="if-python">print</span>(i, end=<span class="string-python">""</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem" target="_blank">
+                    Problem 8
+                </a>
+            </div>
+            <div class="exercise-description">
+                Given the participants' score sheet for your University Sports Day,<br> you are required to find the runner-up score.<br> You are given  scores. Store them in a list<br> and find the score of the runner-up.<br>
+                The first line contains n. The second line contains an array A[] of  integers n each separated by a space.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            n = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            arr = <span class="range-python">map</span>(int, <span class="range-python">input</span>().split())<br>
+            arr = <span class="range-python">list</span>(arr)<br>
+            <span class="if-python">if</span> <span class="range-python">len</span>(arr) == <span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(arr[<span class="numbers-python">0</span>])<br>
+            maximum = arr[<span class="numbers-python">0</span>]<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,n):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span>(arr[i] > maximum):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maximum = arr[i]<br>
+            secondHighest = -<span class="numbers-python">200</span><br>
+            <span class="if-python">for</span> j <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,n):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span>(arr[j] != maximum <span class="if-python">and</span> arr[j] > secondHighest):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;secondHighest = arr[j]<br>
+            <span class="if-python">print</span>(secondHighest)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/nested-list/problem" target="_blank">
+                    Problem 9
+                </a>
+            </div>
+            <div class="exercise-description">
+                Given the names and grades for each student<br> in a class of N students, store them in a nested list<br> and print the name(s) of any student(s) having the second<br> lowest grade.<br><br>
+
+                Note: If there are multiple students with the second<br> lowest grade, order their names alphabetically and<br> print each name on a new line.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            listing = []<br>
+            <span class="if-python">for</span> _ in <span class="range-python">range</span>(<span class="range-python">int</span>(<span class="range-python">input</span>())):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;name = <span class="range-python">input</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;score = <span class="range-python">float</span>(<span class="range-python">input</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;listing_inner = []<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">listing_inner</span>.<span class="operation-python">append</span>(name)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">listing_inner</span>.<span class="operation-python">append</span>(score)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">listing</span>.<span class="operation-python">append</span>(listing_inner)<br>
+            minimum = listing[<span class="numbers-python">0</span>][<span class="numbers-python">1</span>]<br>
+            <span class="if-python">for</span> grouping <span class="if-python">in</span> listing:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> grouping[<span class="numbers-python">1</span>] &lt; minimum:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum = grouping[<span class="numbers-python">1</span>]<br>
+            secondLowestName = []<br>
+            minimum2 = <span class="numbers-python">120</span><br>
+            <span class="if-python">for</span> grouping in listing:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> grouping[<span class="numbers-python">1</span>] != minimum <span class="if-python">and</span> grouping[<span class="numbers-python">1</span>] &lt; minimum2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum2 = grouping[<span class="numbers-python">1</span>]<br>
+            <span class="if-python">for</span> grouping <span class="if-python">in</span> listing:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> grouping[<span class="numbers-python">1</span>] == minimum2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">secondLowestName</span>.<span class="operation-python">append</span>(grouping[<span class="numbers-python">0</span>])<br>
+            <span class="function-operate-python">secondLowestName</span>.<span class="operation-python">sort</span>()<br>
+            <span class="if-python">for</span> name <span class="if-python">in</span> secondLowestName:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(name)<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/finding-the-percentage/problem" target="_blank">
+                    Problem 10
+                </a>
+            </div>
+            <div class="exercise-description">
+                The provided code stub will read in a dictionary containing key/value pairs of name:[marks]<br> for a list of students. Print the average of the marks array for the student name provided<br>, showing 2 places after the decimal.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            scoresList = student_marks[query_name]<br>
+            sum = <span class="numbers-python">0</span><br>
+            <span class="if-python">for</span> mark <span class="if-python">in</span> scoresList:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;sum += mark<br>
+            <span class="if-python">print</span>("<span class="numbers-python">{:.2f}</span>".<span class="operation-python">format</span>(sum / <span class="range-python">len</span>(scoresList)))<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-lists/problem" target="_blank">
+                    Problem 11
+                </a>
+            </div>
+            <div class="exercise-description">
+                Consider a list (list = []). You can perform the following commands:<br>
+                <ul>
+                    <li>insert i e: Insert integer e at position i.</li>
+                    <li>print: Print the list.</li>
+                    <li>remove e: Delete the first occurrence of integer e.</li>
+                    <li>append e: Insert integer e at the end of the list.</li>
+                    <li>sort: Sort the list.</li>
+                    <li>pop: Pop the last element from the list.</li>
+                    <li>reverse: Reverse the list.</li>
+                </ul>
+                Initialize your list and read in the value of  followed by  lines<br> of commands where each command will be of the  types listed above.<br> Iterate through each command in order and perform the corresponding operation<br> on your list.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            result = []<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">0</span>,N):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;line = <span class="range-python">str</span>(<span class="range-python">input</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;listy = <span class="function-operate-python">line</span>.<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;command = listy[<span class="numbers-python">0</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"insert"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argument1 = <span class="range-python">int</span>(listy[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argument2 = <span class="range-python">int</span>(listy[<span class="numbers-python">2</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">insert</span>(argument1, argument2)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"append"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argument1 = <span class="range-python">int</span>(listy[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">append</span>(argument1)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"remove"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;argument1 = <span class="range-python">int</span>(listy[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">remove</span>(argument1)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"print"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(result)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;if command == <span class="string-python">"sort"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">sort</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"pop"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">pop</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command == <span class="string-python">"reverse"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">result</span>.<span class="operation-python">reverse</span>()<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-tuples/problem" target="_blank">
+                    Problem 12
+                </a>
+            </div>
+            <div class="exercise-description">
+                Given an integer, n, and n space-separated integers as input,<br> create a tuple, t, of those n integers.<br> Then compute and print the result of hash(t).
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            tupling = <span class="range-python">tuple</span>(integer_list)<br>
+            <span class="if-python">print</span>(<span class="range-python">hash</span>(tupling))<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/swap-case/problem" target="_blank">
+                    Problem 13
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given a string and your task is to swap cases.<br> In other words, convert all lowercase letters<br> to uppercase letters and vice versa.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="range-python">swap_case</span>(s):<br>
+            result = <span class="string-python">""</span><br>
+            for ch <span class="if-python">in</span> s:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="function-operate-python">ch</span>.<span class="operation-python">isupper</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += <span class="function-operate-python">ch</span>.<span class="operation-python">lower</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> <span class="function-operate-python">ch</span>.<span class="operation-python">islower</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += <span class="function-operate-python">ch</span>.<span class="operation-python">upper</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result += ch<br>
+
+            <span class="if-python">return</span> result<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-string-split-and-join/problem" target="_blank">
+                    Problem 14
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given a string.<br> Split the string on a " " (space) delimiter<br> and join using a - hyphen.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">split_and_join</span>(<span class="arguments-python">line</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment-python"># write your code here</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;split_words = <span class="function-operate-python">line</span>.<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result = (<span class="string-python">"-"</span>).<span class="operation-python">join</span>(split_words)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> result<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/whats-your-name/problem" target="_blank">
+                    Problem 15
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given the firstname and lastname of a person on two different lines.<br> Your task is to read them and print the following:<br>
+
+                Hello firstname lastname! You just delved into python.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">print_full_name</span>(<span class="arguments-python">a</span>, <span class="arguments-python">b</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Hello "</span> + a + <span class="string-python">" "</span> + b + <span class="string-python">"! You just delved into python."</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-mutations/problem" target="_blank">
+                    Problem 16
+                </a>
+            </div>
+            <div class="exercise-description">
+                Read a given string, change the character at a given index<br> and then print the modified string.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">mutate_string</span>(<span class="arguments-python">string</span>, <span class="arguments-python">position</span>, <span class="arguments-python">character</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;string_list = <span class="range-python">list</span>(string)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;string_list[position] = character<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result = (<span class="string-python">""</span>).<span class="operation-python">join</span>(string_list)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> result<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/find-a-string/problem" target="_blank">
+                    Problem 17
+                </a>
+            </div>
+            <div class="exercise-description">
+                In this challenge, the user enters a string and a substring.<br>You have to print the number of times that the substring occurs in the given string.<br> String traversal will take place from left to right, not from right to left.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">count_substring</span>(<span class="arguments-python">string</span>, <span class="arguments-python">sub_string</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">0</span>, <span class="range-python">len</span>(string)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> string[i:i+<span class="range-python">len</span>(sub_string)] == sub_string:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> count<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/string-validators/problem" target="_blank">
+                    Problem 18
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given a string s.<br>
+                Your task is to find out if the string  contains:<br> alphanumeric characters, alphabetical characters, digits,<br> lowercase and uppercase characters.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            s = <span class="range-python">input</span>()<br>
+            listy = <span class="range-python">list</span>(s)<br>
+            listBoolean = {<span class="string-python">"isalnum"</span>: <span class="arguments-python">False</span>, <span class="string-python">"isalpha"</span>: <span class="arguments-python">False</span>, <span class="string-python">"isdigit"</span>: <span class="arguments-python">False</span>,<br> <span class="string-python">"islower"</span>: <span class="arguments-python">False</span>, <span class="string-python">"isupper"</span>: <span class="arguments-python">False</span>}<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span> (0, <span class="range-python">len</span>(listy)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i].<span class="operation-python">isalnum</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listBoolean[<span class="string-python">"isalnum"</span>] = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i].<span class="operation-python">isalpha</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listBoolean[<span class="string-python">"isalpha"</span>] = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i].<span class="operation-python">isdigit</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listBoolean[<span class="string-python">"isdigit"</span>] = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i].<span class="operation-python">islower</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listBoolean[<span class="string-python">"islower"</span>] = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i].<span class="operation-python">isupper</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;listBoolean[<span class="string-python">"isupper"</span>] = <span class="numbers-python">True</span><br>
+            <span class="if-python">print</span>(listBoolean[<span class="string-python">"isalnum"</span>])<br>
+            <span class="if-python">print</span>(listBoolean[<span class="string-python">"isalpha"</span>])<br>
+            <span class="if-python">print</span>(listBoolean[<span class="string-python">"isdigit"</span>])<br>
+            <span class="if-python">print</span>(listBoolean[<span class="string-python">"islower"</span>])<br>
+            <span class="if-python">print</span>(listBoolean[<span class="string-python">"isupper"</span>])<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/text-wrap/problem" target="_blank">
+                    Problem 19
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given a string s and width w.<br>
+                Your task is to wrap the string into a paragraph of width w.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> wrap(<span class="arguments-python">string</span>, <span class="arguments-python">max_width</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;whole_string = <span class="range-python">list</span>(string)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;new_list = []<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;i = <span class="arguments-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> i &lt; <span class="range-python">len</span>(string):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> j <span class="if-python">in</span> <span class="range-python">range</span>(i,i+max_width):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> j &lt; <span class="range-python">len</span>(whole_string):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">new_list</span>.<span class="operation-python">append</span>(whole_string[j])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">new_list</span>.<span class="operation-python">append</span>(<span class="string-python">"\n"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = i + max_width<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> (<span class="string-python">""</span>).<span class="operation-python">join</span>(new_list)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/designer-door-mat/problem" target="_blank">
+                    Problem 20
+                </a>
+            </div>
+            <div class="exercise-description">
+                Mr. Vincent works in a door mat manufacturing company.<br> One day, he designed a new door mat with the following specifications:<br>
+
+                Mat size must be N X M. (N is an odd natural number, and M is 3 times N.)<br>
+                The design should have 'WELCOME' written in the center.<br>
+                The design pattern should only use |, . and - characters.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            dimensions = <span class="range-python">input</span>()<br>
+            height,width = <span class="function-operate-python">dimensions</span>.<span class="operation-python">split</span>()<br>
+            height = (int)(height)<br>
+            width = (int)(width)<br>
+            stringPattern = <span class="string-python">".|."</span><br>
+            stringMultiple = <span class="string-python">""</span><br>
+            multiple = <span class="numbers-python">0</span><br>
+            <span class="if-python">for</span> row <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, height//<span class="numbers-python">2</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;multiple = <span class="numbers-python">1</span>+<span class="numbers-python">2</span>*row<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;stringMultiple = stringPattern*multiple<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="function-operate-python">stringMultiple</span>.<span class="operation-python">center</span>(width,<span class="string-python">"-"</span>))<br>
+            <span class="if-python">print</span>(<span class="string-python">"WELCOME"</span>.<span class="operation-python">center</span>(width,<span class="string-python">"-"</span>))<br>
+            <span class="if-python">for</span> row <span class="if-python">in</span> <span class="range-python">range</span>((height//<span class="numbers-python">2</span>)-<span class="numbers-python">1</span>,-<span class="numbers-python">1</span>,-<span class="numbers-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;multiple = <span class="numbers-python">1</span>+<span class="numbers-python">2</span>*row<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;stringMultiple = stringPattern*multiple<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="function-operate-python">stringMultiple</span>.<span class="operation-python">center</span>(width,<span class="string-python">"-"</span>))<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-string-formatting/problem" target="_blank">
+                    Problem 21
+                </a>
+            </div>
+            <div class="exercise-description">
+                Given an integer, n, print the following values<br> for each integer i from 1 to n:<br>
+                <ul>
+                    <li>Decimal</li>
+                    <li>Octal</li>
+                    <li>Hexadecimal (capitalized)</li>
+                    <li>Binary</li><br>
+                    The four values must be printed on a single line<br> in the order specified above for each i from 1 to n.<br> Each value should be space-padded to match the width of the binary value of n.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">print_formatted</span>(<span class="numbers-python">number</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment-python"># your code goes here</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;formatted_string = <span class="string-python">""</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;binary_length = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">1</span>, number+<span class="numbers-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span>(binary_length &lt; <span class="range-python">len</span>(<span class="range-python">bin</span>(i)[<span class="numbers-python">2</span>:])):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;binary_length = <span class="range-python">len</span>(<span class="range-python">bin</span>(i)[<span class="numbers-python">2</span>:])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">1</span>,number+<span class="numbers-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span> (<span class="range-python">str</span>(i).<span class="operation-python">rjust</span>(binary_length, <span class="string-python">" "</span>)<br> + <span class="string-python">" "</span> + <span class="range-python">oct</span>(i)[<span class="numbers-python">2</span>:].<span class="operation-python">rjust</span>(binary_length, <span class="string-python">" "</span>)<br> + <span class="string-python">" "</span> + <span class="range-python">str</span>(<span class="range-python">hex</span>(i)[<span class="numbers-python">2</span>:].<span class="operation-python">rjust</span>(binary_length, <span class="string-python">" "</span>)).<span class="operation-python">upper</span>()<br> + <span class="string-python">" "</span> + <span class="range-python">bin</span>(i)[<span class="numbers-python">2</span>:].<span class="operation-python">rjust</span>(binary_length, <span class="string-python">" "</span>))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/alphabet-rangoli/problem" target="_blank">
+                    Problem 22
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given an integer, N.<br> Your task is to print an alphabet rangoli of size N.<br> (Rangoli is a form of Indian folk art based on creation of patterns.)
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">print_rangoli</span>(<span class="arguments-python">size</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment-python"># your code goes here</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> row <span class="if-python">in</span> <span class="range-python">range</span>(<span class="arguments-python">0</span>, size):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letterInMiddle = <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-row-<span class="arguments-python">1</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> j <span class="if-python">in</span> <span class="range-python">range</span>(row, <span class="arguments-python">0</span>, -<span class="arguments-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letterInMiddle = <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-j) + <span class="string-python">"-"</span> + letterInMiddle + <span class="string-python">"-"</span> + <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-j)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total_line = <span class="function-operate-python">letterInMiddle</span>.<span class="operation-python">center</span>((size*<span class="arguments-python">2</span>-<span class="arguments-python">1</span>)+(size*<span class="arguments-python">2</span>-<span class="arguments-python">2</span>),<span class="string-python">"-"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(total_line)<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> row <span class="if-python">in</span> <span class="range-python">range</span>(size-<span class="arguments-python">2</span>, -<span class="arguments-python">1</span>, -<span class="arguments-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letterInMiddle = <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-row-<span class="arguments-python">1</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> j <span class="if-python">in</span> <span class="range-python">range</span>(row, <span class="arguments-python">0</span>, -<span class="arguments-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letterInMiddle = <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-j) + <span class="string-python">"-"</span> + letterInMiddle + <span class="string-python">"-"</span> + <span class="range-python">chr</span>(<span class="range-python">ord</span>(<span class="string-python">"a"</span>)+size-j)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total_line = <span class="function-operate-python">letterInMiddle</span>.<span class="operation-python">center</span>((size*<span class="arguments-python">2</span>-<span class="arguments-python">1</span>)+(size*<span class="arguments-python">2</span>-<span class="arguments-python">2</span>),<span class="string-python">"-"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(total_line)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> total_line<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/capitalize/problem" target="_blank">
+                    Problem 23
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are asked to ensure that the first and last names of people<br> begin with a capital letter in their passports.<br> For example, alison heck should be capitalised correctly as Alison Heck.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="comment-python"># Complete the solve function below.</span><br>
+            <span class="if-python">def</span> <span class="operation-python">solve</span>(<span class="numbers-python">s</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;char_list = <span class="range-python">list</span>(s)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">len</span>(char_list)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> char_list[ptr] == <span class="string-python">" "</span> <span class="if-python">and</span> char_list[ptr+<span class="numbers-python">1</span>].<span class="operation-python">isalpha</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char_list[ptr+<span class="numbers-python">1</span>] = char_list[ptr+<span class="numbers-python">1</span>].<span class="operation-python">upper</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> ptr == <span class="numbers-python">0</span> <span class="if-python">and</span> char_list[ptr].<span class="operation-python">isalpha</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;char_list[ptr] = char_list[ptr].<span class="operation-python">upper</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;result = (<span class="string-python">""</span>).<span class="operation-python">join</span>(char_list)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> result<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/collections-counter/problem" target="_blank">
+                    Problem 24
+                </a>
+            </div>
+            <div class="exercise-description">
+                Raghu is a shoe shop owner.<br> His shop has X number of shoes.<br>
+                He has a list containing the size of each shoe he has in his shop.<br>
+                There are N number of customers who are willing to pay x(i)<br> amount of money only if they get the shoe of their desired size.<br><br>
+
+                Your task is to compute how much money Raghu earned.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">from</span> collections <span class="if-python">import</span> Counter<br>
+            number_of_shoes = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            sizes_list = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            counter_dt = <span class="operation-python">Counter</span>(sizes_list)<br>
+            N = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            total_sum = <span class="numbers-python">0</span><br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,N):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;customer_demand = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> customer_demand[0] <span class="if-python">in</span> <span class="function-operate-python">counter_dt</span>.<span class="operation-python">keys</span>() <span class="if-python">and</span> counter_dt[customer_demand[<span class="numbers-python">0</span>]] > <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total_sum = total_sum + <span class="range-python">int</span>(customer_demand[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_dt[customer_demand[<span class="numbers-python">0</span>]] = counter_dt[customer_demand[<span class="numbers-python">0</span>]] - <span class="numbers-python">1</span><br>
+            <span class="if-python">print</span>(total_sum)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/polar-coordinates/problem" target="_blank">
+                    Problem 25
+                </a>
+            </div>
+            <div class="exercise-description">
+                You are given a complex z.<br> Your task is to convert it to polar coordinates.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">from</span> cmath <span class="if-python">import</span> phase<br>
+            complex_coords = <span class="range-python">input</span>()<br>
+            complex_coords_1 = <span class="range-python">list</span>()<br>
+            <span class="if-python">if</span> <span class="string-python">"+"</span> <span class="if-python">in</span> complex_coords:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;complex_coords_1 = <span class="function-operate-python">complex_coords</span>.<span class="operation-python">split</span>(<span class="string-python">"+"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;complex_coords_1[<span class="numbers-python">1</span>] = <span class="range-python">int</span>(complex_coords_1[<span class="numbers-python">1</span>][<span class="numbers-python">0</span>:<span class="range-python">len</span>(complex_coords_1[<span class="numbers-python">1</span>])-<span class="numbers-python">1</span>])<br>
+            <span class="if-python">elif</span> <span class="string-python">"-"</span> <span class="if-python">in</span> complex_coords[<span class="numbers-python">1</span>:]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">complex_coords_1</span>.<span class="operation-python">append</span>(complex_coords[0:complex_coords[<span class="numbers-python">1</span>:].<span class="operation-python">index</span>(<span class="string-python">"-"</span>)+<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">complex_coords_1</span>.<span class="operation-python">append</span>(complex_coords[complex_coords[<span class="numbers-python">1</span>:].<span class="operation-python">index</span>(<span class="string-python">"-"</span>)+<span class="numbers-python">1</span>:])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;complex_coords_1[<span class="numbers-python">1</span>] = <span class="range-python">int</span>(complex_coords_1[<span class="numbers-python">1</span>][<span class="numbers-python">0</span>:<span class="range-python">len</span>(complex_coords_1[<span class="numbers-python">1</span>])-<span class="numbers-python">1</span>])<br>
+            complex_coords_1[<span class="numbers-python">0</span>] = <span class="range-python">int</span>(complex_coords_1[<span class="numbers-python">0</span>])<br>
+            complex_coords_1[<span class="numbers-python">1</span>] = <span class="range-python">int</span>(complex_coords_1[<span class="numbers-python">1</span>])<br>
+            <span class="if-python">print</span>(<span class="range-python">abs</span>(<span class="range-python">complex</span>(complex_coords_1[<span class="numbers-python">0</span>], complex_coords_1[<span class="numbers-python">1</span>])))<br>
+            <span class="if-python">print</span>(<span class="operation-python">phase</span>(<span class="range-python">complex</span>(complex_coords_1[<span class="numbers-python">0</span>], complex_coords_1[<span class="numbers-python">1</span>])))<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-introduction-to-sets/problem" target="_blank">Problem 31</a>
+            </div>
+            <div class="exercise-description">
+                Ms. Gabriel Williams is a botany professor at District College.<br> One day, she asked her student Mickey to compute the average<br> of all the plants with distinct heights in her greenhouse.<br>
+                The first line contains the integer, N, the total number of plants.<br>
+                The second line contains the N space separated heights of the plants.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="function-operate-python">average</span>(<span class="arguments-python">array</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;# your code goes here<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;set_array = <span class="range-python">set</span>(array)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;sum = <span class="arguments-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> val <span class="if-python">in</span> set_array:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum += val<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;average = sum / <span class="range-python">len</span>(set_array)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> average<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-collections-ordereddict/problem" target="_blank">Problem 32</a>
+            </div>
+            <div class="exercise-description">
+                You are the manager of a supermarket.<br>
+                You have a list of  items together with their prices<br> that consumers bought on a particular day.<br>
+                Your task is to print each item_name and net_price<br> in order of its first occurrence.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">from</span> collections <span class="if-python">import</span> OrderedDict<br>
+            orderedDictionary = <span class="operation-python">OrderedDict</span>()<br>
+            items_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> range(<span class="numbers-python">0</span>, items_number):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;item_price_grouping = <span class="range-python">input</span>().<span class="operation-python">split</span>(<span class="string-python">" "</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;price = <span class="range-python">int</span>(item_price_grouping[<span class="range-python">len</span>(item_price_grouping)-<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">item_price_grouping</span>.<span class="operation-python">pop</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;item_name = (<span class="string-python">" "</span>).<span class="operation-python">join</span>(item_price_grouping)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> item_name <span class="if-python">not in</span> orderedDictionary:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orderedDictionary[item_name] = price<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;orderedDictionary[item_name] = price + <span class="function-operate-python">orderedDictionary</span>.<span class="operation-python">get</span>(item_name)<br>
+            <span class="if-python">for</span> item_tuple <span class="if-python">in</span> orderedDictionary:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(item_tuple + <span class="string-python">" "</span> + <span class="range-python">str</span>(<span class="function-operate-python">orderedDictionary</span>.<span class="operation-python">get</span>(item_tuple)))<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/exceptions/problem" target="_blank">Problem 33</a>
+            </div>
+            <div class="exercise-description">
+                You are given two values a and b.<br>
+                Perform integer division and print a/b.<br>
+                If there is division by 0 or value error print it out<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            lines = <span class="range-python">input</span>()<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,<span class="range-python">int</span>(lines)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;operate = <span class="range-python">input()</span>.split()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">try</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="range-python">int</span>(<span class="range-python">int</span>(operate[<span class="numbers-python">0</span>]) / <span class="range-python">int</span>(operate[<span class="numbers-python">1</span>])))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">except</span> ZeroDivisionError <span class="if-python">as</span> e:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Error Code: integer division or modulo by zero"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">except</span> ValueError <span class="if-python">as</span> e:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Error Code: "</span> + str(e))<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/calendar-module/problem" target="_blank">Problem 34</a>
+            </div>
+            <div class="exercise-description">
+                You are given a date.<br> Your task is to find what the day is on that date.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">import</span> calendar<br>
+            days = {<span class="numbers-python">0</span>: <span class="string-python">"Monday"</span>, <span class="numbers-python">1</span>:<span class="string-python">"Tuesday"</span>, <span class="numbers-python">2</span>:<span class="string-python">"Wednesday"</span>, <span class="numbers-python">3</span>:<span class="string-python">"Thursday"</span>,<br> <span class="numbers-python">4</span>:<span class="string-python">"Friday"</span>, <span class="numbers-python">5</span>:<span class="string-python">"Saturday"</span>, <span class="numbers-python">6</span>:<span class="string-python">"Sunday"</span>}<br>
+            date_list = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            month = <span class="range-python">int</span>(date_list[<span class="numbers-python">0</span>])<br>
+            date = <span class="range-python">int</span>(date_list[<span class="numbers-python">1</span>])<br>
+            year = <span class="range-python">int</span>(date_list[<span class="numbers-python">2</span>])<br>
+            day = <span class="function-operate-python">calendar</span>.<span class="operation-python">weekday</span>(year,month,date)<br>
+            <span class="if-python">print</span>(days[day].<span class="operation-python">upper</span>())<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/defaultdict-tutorial/problem" target="_blank">Problem 35</a>
+            </div>
+            <div class="exercise-description">
+                In this challenge, you will be given 2 integers, n and m.<br> There are n words, which might repeat, in word group A.<br> There are m words belonging to word group B.<br> For each m words, check whether the word has appeared in group A or not.<br> Print the indices of each occurrence of m in group A.<br> If it does not appear, print -1.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            n,m = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            n = <span class="range-python">int</span>(n)<br>
+            m = <span class="range-python">int</span>(m)<br>
+            <span class="if-python">from</span> collections <span class="if-python">import</span> defaultdict<br>
+            d = <span class="operation-python">defaultdict</span>(list)<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, n):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;word = <span class="range-python">input</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;d[word].<span class="operation-python">append</span>(i+<span class="numbers-python">1</span>)<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, m):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;word = <span class="range-python">input</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> word <span class="if-python">in</span> <span class="function-operate-python">d</span>.<span class="operation-python">keys</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> number <span class="if-python">in</span> d[word]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(number, end=<span class="string-python">" "</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(-<span class="numbers-python">1</span>, end=<span class="string-python">" "</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>()<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-time-delta/problem" target="_blank">Problem 36</a>
+            </div>
+            <div class="exercise-description">
+                The first line contains T, the number of testcases.<br>
+                Each testcase contains 2 lines, representing time t1 and time t2.<br>
+                Print the absolute difference (t1-t2) in seconds.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">time_delta</span>(<span class="numbers-python">t1</span>, <span class="numbers-python">t2</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;timeDelta = <span class="numbers-python">3600</span>*<span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">1</span>:<span class="numbers-python">3</span>])+ <span class="numbers-python">60</span>*<span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">3</span>:])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;sign = <span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">0</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;hours = <span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">0</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;minutes = <span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;seconds = <span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">2</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;months = {<span class="string-python">"Jan"</span>:<span class="numbers-python">1</span>, <span class="string-python">"Feb"</span>:<span class="numbers-python">2</span>, <span class="string-python">"Mar"</span>:<span class="numbers-python">3</span>, <span class="string-python">"Apr"</span>:<span class="numbers-python">4</span>, <span class="string-python">"May"</span>:<span class="numbers-python">5</span>,<br> <span class="string-python">"Jun"</span>:<span class="numbers-python">6</span>, <span class="string-python">"Jul"</span>:<span class="numbers-python">7</span>, <span class="string-python">"Aug"</span>:<span class="numbers-python">8</span>, <span class="string-python">"Sep"</span>:<span class="numbers-python">9</span>, <span class="string-python">"Oct"</span>:<span class="numbers-python">10</span>, <span class="string-python">"Nov"</span>:<span class="numbers-python">11</span>, <span class="string-python">"Dec"</span>:<span class="string-python">12</span>}<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;year = <span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">3</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;month = <span class="range-python">int</span>(months[<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">2</span>]])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;date = <span class="range-python">int</span>(<span class="function-operate-python">t1</span>.<span class="operation-python">split</span>()[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt = <span class="function-operate-python">datetime</span>.<span class="operation-python">datetime</span>(year, month, date, hours, minutes, seconds)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;timestamp = <span class="function-operate-python">dt</span>.<span class="operation-python">timestamp</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> sign == <span class="string-python">"+"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp = timestamp - timeDelta<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp = timestamp + timeDelta<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;sign1 = <span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">0</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;timeDelta1 = <span class="arguments-python">3600</span>*<span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">1</span>:<span class="numbers-python">3</span>])+ <span class="numbers-python">60</span>*<span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">5</span>][<span class="numbers-python">3</span>:])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;hours1 = <span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">0</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;minutes1 = <span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;seconds1 = <span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">4</span>].<span class="operation-python">split</span>(<span class="string-python">":"</span>)[<span class="numbers-python">2</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;year1 = <span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">3</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;month1 = <span class="range-python">int</span>(months[<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">2</span>]])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;date1 = <span class="range-python">int</span>(<span class="function-operate-python">t2</span>.<span class="operation-python">split</span>()[<span class="numbers-python">1</span>])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt1 = <span class="function-operate-python">datetime</span>.<span class="operation-python">datetime</span>(year1, month1, date1, hours1, minutes1, seconds1)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;timestamp1 = <span class="function-operate-python">dt1</span>.<span class="operation-python">timestamp</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> sign1 == <span class="string-python">"+"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp1 = timestamp1 - timeDelta1<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;timestamp1 = timestamp1 + timeDelta1<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> <span class="range-python">str</span>(<span class="range-python">abs</span>(<span class="range-python">int</span>(timestamp1-timestamp)))<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-set-intersection-operation/problem" target="_blank">Problem 37</a>
+            </div>
+            <div class="exercise-description">
+                The students of District College have subscriptions to English and French newspapers.<br> Some students have subscribed only to English, some have subscribed only to French,<br> and some have subscribed to both newspapers.<br><br>
+
+                You are given two sets of student roll numbers.<br> One set has subscribed to the English newspaper, one set has subscribed to the French newspaper.<br> Your task is to find the total number of students who have subscribed to both newspapers.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            English_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            English_roll = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            French_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            French_roll = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            <span class="if-python">print</span>(<span class="range-python">len</span>(<span class="function-operate-python">English_roll</span>.<span class="operation-python">intersection</span>(French_roll)))<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-set-difference-operation/problem" target="_blank">Problem 38</a>
+            </div>
+            <div class="exercise-description">
+                Students of District College have a subscription to English and French newspapers.<br> Some students have subscribed to only the English newspaper, some have subscribed to only the French newspaper,<br> and some have subscribed to both newspapers.<br>
+
+                You are given two sets of student roll numbers.<br> One set has subscribed to the English newspaper, and one set has subscribed to the French newspaper.<br> Your task is to find the total number of students who have subscribed to only English newspapers.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            English_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            English_roll = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            French_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            French_roll = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            <span class="if-python">print</span>(<span class="range-python">len</span>(<span class="function-operate-python">English_roll</span>.<span class="operation-python">difference</span>(French_roll)))<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-set-union/problem" target="_blank">Problem 39</a>
+            </div>
+            <div class="exercise-description">
+                The students of District College have subscriptions to English and French newspapers.<br> Some students have subscribed only to English, some have subscribed to only French and some have subscribed to both newspapers.<br><br>
+
+                You are given two sets of student roll numbers.<br> One set has subscribed to the English newspaper, and the other set is subscribed to the French newspaper.<br> The same student could be in both sets.<br> Your task is to find the total number of students who have subscribed to at least one newspaper.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            English_count = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            roll_numbers_english = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            French_count = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            roll_numbers_french = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            <span class="if-python">print</span>(<span class="range-python">len</span>(<span class="function-operate-python">roll_numbers_english</span>.<span class="operation-python">union</span>(roll_numbers_french)))<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-collections-deque/problem" target="_blank">Problem 40</a>
+            </div>
+            <div class="exercise-description">
+                Perform append, pop, popleft and appendleft methods on an empty deque d.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">from</span> collections <span class="if-python">import</span> deque<br>
+            operations_count = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            d = <span class="operation-python">deque</span>()<br>
+            <span class="if-python">for</span> operation <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, operations_count):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;command_line = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;listy = command_line[<span class="numbers-python">1</span>:]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;d1 = <span class="operation-python">deque</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> number <span class="if-python">in</span> listy:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d1</span>.<span class="operation-python">append</span>(<span class="range-python">int</span>(number))<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"append"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">append</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"appendleft"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">appendleft</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"pop"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">pop</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"popleft"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">popleft</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"extend"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">extend</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"extendleft"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">extendleft</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"remove"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">remove</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"count"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">count</span>(listy)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"reverse"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">reverse</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> command_line[<span class="numbers-python">0</span>] == <span class="string-python">"rotate"</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">rotate</span>(listy)<br>
+            <span class="if-python">for</span> item <span class="if-python">in</span> d:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> i <span class="if-python">in</span> item:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(i, end=<span class="string-python">" "</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/word-order/problem" target="_blank">Problem 41</a>
+            </div>
+            <div class="exercise-description">
+                Output 2 lines.<br>
+                On the first line, output the number of distinct words from the input.<br>
+                On the second line, output the number of occurrences for each distinct word <br>according to their appearance in the input.
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            number = <span class="range-python">input</span>()<br>
+            dt = {}<br>
+            order_dt = {}<br>
+            setty = <span class="range-python">set</span>()<br>
+            arrangements = <span class="range-python">set</span>()<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">int</span>(number)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;word = <span class="range-python">input</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> word <span class="if-python">not in</span> arrangements:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;order_dt[i] = word<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[word] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setty</span>.<span class="operation-python">add</span>(i)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">arrangements</span>.<span class="operation-python">add</span>(word)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[word] = <span class="function-operate-python">dt</span>.<span class="operation-python">get</span>(word) + <span class="numbers-python">1</span><br>
+            <span class="if-python">print</span>(<span class="range-python">len</span>(dt))<br>
+            <span class="if-python">for</span> pt <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">int</span>(number)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> pt <span class="if-python">in</span> setty:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(dt[order_dt[pt]], end=" ")<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/compress-the-string/problem" target="_blank">Problem 42</a>
+            </div>
+            <div class="exercise-description">
+                You are given a string S.<br> Suppose a character 'c' occurs consecutively X times in the string.<br> Replace these consecutive occurrences of the character 'c'<br> with (X,c) in the string.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            s = <span class="range-python">input</span>()<br>
+            current_ch = s[<span class="numbers-python">0</span>]<br>
+            count = <span class="numbers-python">0</span><br>
+            final_string = <span class="string-python">""</span><br>
+            ptr = <span class="numbers-python">0</span><br>
+            <span class="if-python">for</span> ch <span class="if-python">in</span> s:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch != current_ch:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringy = <span class="string-python">"("</span> + <span class="range-python">str</span>(count) + <span class="string-python">", "</span> + current_ch + <span class="string-python">") "</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_string = final_string + stringy<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;current_ch = ch<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ptr == <span class="range-python">len</span>(s)-<span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringy = <span class="string-python">"("</span> + <span class="range-python">str</span>(count) + <span class="string-python">", "</span> + current_ch + <span class="string-python">") "</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_string = final_string + stringy<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ptr == <span class="range-python">len</span>(s)-<span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringy = <span class="string-python">"("</span> + <span class="range-python">str</span>(count) + <span class="string-python">", "</span> + current_ch + <span class="string-python">") "</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_string = final_string + stringy<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr + <span class="numbers-python">1</span><br>
+            <span class="if-python">print</span>(final_string)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-the-captains-room/problem" target="_blank">Problem 43</a>
+            </div>
+            <div class="exercise-description">
+                Mr. Anant Asankhya is the manager at the INFINITE hotel.<br> The hotel has an infinite amount of rooms.<br><br>
+
+                One fine day, a finite number of tourists come to stay at the hotel.<br>
+                The tourists consist of:<br>
+                → A Captain.<br>
+                → An unknown group of families consisting of K members per group where K ≠ 1.<br><br>
+
+                The Captain was given a separate room,<br> and the rest were given one room per group.<br><br>
+
+                Mr. Anant has an unordered list of randomly arranged room entries.<br> The list consists of the room numbers for all of the tourists.<br> The room numbers will appear K times per group except for the Captain's room.<br><br>
+
+                Mr. Anant needs you to help him find the Captain's room number.<br>
+                The total number of tourists or the total number<br> of groups of families is not known to you.<br>
+                You only know the value of K and the room number list.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            K = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            listy = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            bunch = <span class="range-python">len</span>(listy)-<span class="numbers-python">1</span> // K<br>
+            setty = <span class="range-python">set</span>()<br>
+            discarded = <span class="range-python">set</span>()<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">len</span>(listy)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> listy[i] <span class="if-python">not in</span> setty:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setty</span>.<span class="operation-python">add</span>(listy[i])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">discarded</span>.<span class="operation-python">add</span>(listy[i])<br>
+            <span class="if-python">for</span> num <span class="if-python">in</span> <span class="function-operate-python">setty</span>.<span class="operation-python">difference</span>(discarded):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(num)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/no-idea/problem" target="_blank">Problem 44</a>
+            </div>
+            <div class="exercise-description">
+                There is an array of n integers.<br> There are also 2 disjoint sets,<br> A and B, each containing m integers.<br> You like all the integers in set A<br> and dislike all the integers in set B.<br> Your initial happiness is 0.<br> For each  integer in the array,<br> if i belongs to A, you add 1 to your happiness.<br> If i belongs to B, you add -1 to your happiness.<br> Otherwise, your happiness does not change.<br> Output your final happiness at the end.<br><br>
+
+                Note: Since A and B are sets, they have no repeated elements.<br> However, the array might contain duplicate elements.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            first_line = <span class="range-python">input</span>()<br>
+            provided_numbers_length = <span class="range-python">int</span>(<span class="function-operate-python">first_line</span>.<span class="operation-python">split</span>()[<span class="numbers-python">0</span>])<br>
+            A_B_length = <span class="range-python">int</span>(<span class="function-operate-python">first_line</span>.<span class="operation-python">split</span>()[<span class="numbers-python">1</span>])<br>
+            provided_numbers = <span class="range-python">input()</span>.<span class="operation-python">split</span>()<br>
+            A = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            B = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            setty = <span class="range-python">set</span>()<br>
+            setty1 = <span class="range-python">set</span>()<br>
+            <span class="if-python">for</span> number <span class="if-python">in</span> A:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setty</span>.<span class="operation-python">add</span>(number)<br>
+            <span class="if-python">for</span> number <span class="if-python">in</span> B:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setty1</span>.<span class="operation-python">add</span>(number)<br>
+            happiness = <span class="numbers-python">0</span>;<br>
+            <span class="if-python">for</span> number <span class="if-python">in</span> provided_numbers:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> number <span class="if-python">in</span> setty:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;happiness = happiness + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> number <span class="if-python">in</span> setty1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;happiness = happiness - <span class="numbers-python">1</span><br>
+            <span class="if-python">print</span>(happiness)<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/piling-up/problem" target="_blank">Problem 45</a>
+            </div>
+            <div class="exercise-description">
+                There is a horizontal row of n cubes.<br> The length of each cube is given.<br> You need to create a new vertical pile of cubes.<br> The new pile should follow these directions:<br> if cube(i) is on top of cube(j)<br> then sideLength(j) > sideLength(i).<br><br>
+
+                When stacking the cubes, you can only<br> pick up either the leftmost or the<br> rightmost cube each time.<br> Print "Yes" if it is possible to stack the cubes.<br> Otherwise, print "No".<br> Do not print the quotation marks.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">from</span> collections <span class="if-python">import</span> deque<br>
+            d = <span class="operation-python">deque</span>()<br>
+            l = <span class="range-python">list</span>()<br>
+            cases = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            escape = <span class="numbers-python">False</span><br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, cases):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">clear</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cubes_number = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;cubes = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> cube <span class="if-python">in</span> cubes:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">append</span>(<span class="range-python">int</span>(cube))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> <span class="range-python">len</span>(d) > <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="range-python">int</span>(d[<span class="range-python">len</span>(d)-<span class="numbers-python">1</span>]) > <span class="range-python">int</span>(d[<span class="numbers-python">0</span>]):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="range-python">len</span>(l) > <span class="numbers-python">0</span> <span class="if-python">and</span> <span class="range-python">int</span>(d[<span class="range-python">len</span>(d)-<span class="numbers-python">1</span>]) > l[<span class="range-python">len</span>(l)-<span class="numbers-python">1</span>]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"No"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">l</span>.<span class="operation-python">append</span>(<span class="range-python">int</span>(d[<span class="range-python">len</span>(d)-<span class="numbers-python">1</span>]))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">pop</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="range-python">len</span>(l) > <span class="numbers-python">0</span> <span class="if-python">and</span> <span class="range-python">int</span>(d[<span class="numbers-python">0</span>]) > l[<span class="range-python">len</span>(l)-<span class="numbers-python">1</span>]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"No"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">l</span>.<span class="operation-python">append</span>(<span class="range-python">int</span>(d[<span class="numbers-python">0</span>]))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">d</span>.<span class="operation-python">popleft</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">l</span>.<span class="operation-python">clear</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> escape == <span class="numbers-python">True</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;escape = <span class="numbers-python">False</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">continue</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Yes"</span>)<br>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/itertools-combinations/problem" target="_blank">Problem 46</a>
+            </div>
+            <div class="exercise-description">
+                This tool returns the r length subsequences<br> of elements from the input iterable.<br><br>
+
+                Combinations are emitted in lexicographic sorted order.<br> So, if the input iterable is sorted,<br> the combination tuples will be produced in sorted order.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            given = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            word = given[<span class="numbers-python">0</span>]<br>
+            sorted1 = <span class="range-python">list</span>(word)<br>
+            <span class="function-operate-python">sorted1</span>.<span class="operation-python">sort</span>()<br>
+            word_final = <span class="string-python">""</span>.<span class="operation-python">join</span>(sorted1)<br>
+            k = <span class="range-python">int</span>(given[<span class="numbers-python">1</span>])<br>
+            <span class="if-python">from</span> itertools <span class="if-python">import</span> combinations<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">1</span>, k+<span class="numbers-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;listy = <span class="range-python">list</span>(<span class="operation-python">combinations</span>(word_final, i))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> w <span class="if-python">in</span> listy:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> w:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(ptr, end=<span class="string-python">""</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>()<br>
+
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-check-subset/problem" target="_blank">Problem 47</a>
+            </div>
+            <div class="exercise-description">
+                You are given two sets, A and B.<br>
+                Your job is to find whether set A is a subset of set B.<br><br>
+
+                If set A is subset of set B, print True.<br>
+                If set A is not a subset of set B, print False.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            cases = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, cases):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;A_length = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;A = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;B_length = </span>(<span class="range-python">int</span>(</span>(<span class="range-python">input</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;B = </span>(<span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> A_length > B_length:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="numbers-python">False</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">continue</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;subset = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> item_A <span class="if-python">in</span> A:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> item_A <span class="if-python">not in</span> B:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subset = <span class="numbers-python">False</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(subset)<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/py-check-strict-superset/problem" target="_blank">Problem 48</a>
+            </div>
+            <div class="exercise-description">
+                You are given a set A and n other sets.<br>
+                Your job is to find whether set A is a strict superset of each of the n sets.<br><br>
+
+                Print True, if A is a strict superset of each of the n sets.<br> Otherwise, print False.<br><br>
+
+                A strict superset has at least one element that<br> does not exist in its subset.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            A = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            sets = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            strict_superset = <span class="numbers-python">True</span><br>
+            completed = <span class="numbers-python">False</span><br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, sets):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;set_temp = <span class="range-python">set</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> item_temp <span class="if-python">in</span> set_temp:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> item_temp <span class="if-python">not in</span> A:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;strict_superset = <span class="numbers-python">False</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(strict_superset)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> item_temp <span class="if-python">in</span> A <span class="if-python">and</span> <span class="range-python">len</span>(A) > <span class="range-python">len</span>(set_temp) <span class="if-python">and</span> ptr == <span class="range-python">len</span>(set_temp) - <span class="numbers-python">1</span> <span class="if-python">and</span> i == sets - <span class="numbers-python">1</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(strict_superset)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;completed = <span class="numbers-python">True</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> strict_superset == <span class="numbers-python">False</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> completed == <span class="numbers-python">True</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br>
+
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/input/problem" target="_blank">Problem 49</a>
+            </div>
+            <div class="exercise-description">
+                You are given a polynomial P of a single indeterminate (or variable), x.<br>
+                You are also given the values of x and k.<br> Your task is to verify if P(x) = k.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            inputs = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            x = <span class="range-python">int</span>(inputs[<span class="numbers-python">0</span>])<br>
+            k = <span class="range-python">int</span>(inputs[<span class="numbers-python">1</span>])<br>
+            statement = <span class="range-python">input</span>()<br>
+            statement = <span class="function-operate-python">statement</span>.<span class="operation-python">replace</span>(<span class="string-python">"x"</span>, <span class="range-python">str</span>(x))<br>
+            <span class="if-python">print</span>(<span class="range-python">eval</span>(statement) == k)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/zipped/problem" target="_blank">Problem 50</a>
+            </div>
+            <div class="exercise-description">
+                The first line contains N and X separated by a space.<br>
+                The next X lines contains the space separated marks obtained by students in a particular subject.<br><br>
+
+                Print the averages of all students on separate lines.<br><br>
+
+                The averages must be correct up to  decimal place.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            cases = <span class="range-python">input</span>().<span class="operation-python">split</span>()<br>
+            cases[<span class="numbers-python">1</span>] = <span class="range-python">int</span>(cases[<span class="numbers-python">1</span>])<br>
+            marks = <span class="range-python">list</span>()<br>
+            <span class="if-python">for</span> c <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,cases[<span class="numbers-python">1</span>]):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">marks</span>.<span class="operation-python">append</span>(<span class="range-python">input</span>().<span class="operation-python">split</span>())<br>
+            final_list = <span class="range-python">list</span>()<br>
+            <span class="if-python">for</span> m <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">0</span>,<span class="range-python">len</span>(marks)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> m == <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_list = [marks[m]]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;final_list = final_list + [marks[m]]<br>
+
+            final_list_1 = <span class="range-python">zip</span>(*final_list)<br>
+            sum = <span class="numbers-python">0</span><br>
+            <span class="if-python">for</span> lis <span class="if-python">in</span> final_list_1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> num <span class="if-python">in</span> lis:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sum = sum + <span class="range-python">float</span>(num)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(sum / <span class="range-python">len</span>(lis))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;sum = <span class="numbers-python">0</span><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/re-split/problem" target="_blank">Problem 51</a>
+            </div>
+            <div class="exercise-description">
+                You are given a string s consisting<br> only of digits 0-9, commas ,, and dots .<br><br>
+
+                Your task is to complete the regex_pattern defined below<br>, which will be used to re.split() all of the , and . symbols in s.<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            regex_pattern = <span class="string-python">r",|\."</span><br>
+
+            <span class="if-python">import</span> re<br>
+            <span class="if-python">print</span>(<span class="string-python">"\n"</span>.<span class="operation-python">join</span>(<span class="function-operate-python">re</span>.<span class="operation-python">split</span>(regex_pattern, <span class="range-python">input</span>())))<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-eval/problem" target="_blank">Problem 52</a>
+            </div>
+            <div class="exercise-description">
+                You are given an expression in a line.<br> Read that line as a string variable, such as var,<br> and print the result using eval(var).<br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            command = <span class="range-python">input</span>()<br>
+            <span class="range-python">eval</span>(command)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/ginorts/problem" target="_blank">Problem 53</a>
+            </div>
+            <div class="exercise-description">
+                You are given a string S.<br>
+                S contains alphanumeric characters only.<br>
+                Your task is to sort the string S in the following manner:<br>
+                <ul>
+                    <li>
+                        All sorted lowercase letters are ahead of uppercase letters.</li>
+                    <li>
+                        All sorted uppercase letters are ahead of digits.</li>
+                    <li>
+                        All sorted odd digits are ahead of sorted even digits.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            stringy = <span class="range-python">input</span>()<br>
+            stringy_lower = <span class="string-python">""</span><br>
+            stringy_upper = <span class="string-python">""</span><br>
+            digits_list = []<br>
+            <span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,<span class="range-python">len</span>(stringy)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> stringy[ptr].<span class="operation-python">isalpha</span>() <span class="if-python">and</span> stringy[ptr].<span class="operation-python">isupper</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringy_upper = stringy_upper + stringy[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> stringy[ptr].<span class="operation-python">isalpha</span>() <span class="if-python">and</span> stringy[ptr].<span class="operation-python">islower</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stringy_lower = stringy_lower + stringy[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> stringy[ptr].<span class="operation-python">isdigit</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">digits_list</span>.<span class="operation-python">append</span>(int(stringy[ptr]))<br>
+            <span class="function-operate-python">digits_list</span>.<span class="operation-python">sort</span>()<br>
+            stringy_lower_sorted = <span class="string-python">""</span><br>
+            minimum = <span class="range-python">ord</span>(<span class="string-python">"z"</span>)<br>
+            ch = <span class="string-python">""</span><br>
+            done_chars_ptr = <span class="range-python">set</span>()<br>
+            ptr_final = <span class="numbers-python">0</span><br>
+            <span class="if-python">while</span> <span class="range-python">len</span>(stringy_lower_sorted) &lt; <span class="range-python">len</span>(stringy_lower):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,<span class="range-python">len</span>(stringy_lower)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> minimum >= <span class="range-python">ord</span>(stringy_lower[ptr]) <span class="if-python">and</span> ptr <span class="if-python">not in</span> done_chars_ptr:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum = <span class="range-python">ord</span>(stringy_lower[ptr])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch = stringy_lower[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr_final = ptr<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">done_chars_ptr</span>.<span class="operation-python">add</span>(ptr_final)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;stringy_lower_sorted = stringy_lower_sorted + ch<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;minimum = <span class="range-python">ord</span>(<span class="string-python">"z"</span>)<br>
+
+
+            stringy_upper_sorted = <span class="string-python">""</span><br>
+            minimum = <span class="range-python">ord</span>(<span class="string-python">"Z"</span>)<br>
+            ch = <span class="string-python">""</span><br>
+            done_chars_ptr = <span class="range-python">set</span>()<br>
+            ptr_final = <span class="numbers-python">0</span><br>
+            <span class="if-python">while</span> <span class="range-python">len</span>(stringy_upper_sorted) &lt; <span class="range-python">len</span>(stringy_upper):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> range(<span class="numbers-python">0</span>,<span class="range-python">len</span>(stringy_upper)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> minimum >= <span class="range-python">ord</span>(stringy_upper[ptr]) <span class="if-python">and</span> ptr <span class="if-python">not in</span> done_chars_ptr:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum = <span class="range-python">ord</span>(stringy_upper[ptr])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch = stringy_upper[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr_final = ptr<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">done_chars_ptr</span>.<span class="operation-python">add</span>(ptr_final)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;stringy_upper_sorted = stringy_upper_sorted + ch<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;minimum = <span class="range-python">ord</span>(<span class="string-python">"Z"</span>)<br>
+            alphabets_sorted = stringy_lower_sorted + stringy_upper_sorted<br>
+            numbers_string = <span class="string-python">""</span><br>
+            <span class="if-python">for</span> digi <span class="if-python">in</span> digits_list:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> digi % <span class="numbers-python">2</span> != <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers_string = numbers_string + <span class="range-python">str</span>(digi)<br>
+            <span class="if-python">for</span> digi <span class="if-python">in</span> digits_list:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> digi % <span class="numbers-python">2</span> == <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;numbers_string = numbers_string + <span class="range-python">str</span>(digi)<br>
+            <span class="if-python">print</span>(alphabets_sorted + numbers_string)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/map-and-lambda-expression/problem" target="_blank">Problem 54</a>
+            </div>
+            <div class="exercise-description">
+                A list on a single line containing the cubes of the first<br>  fibonacci numbers.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            cube = <span class="if-python">lambda</span> <span class="numbers-python">x</span>: x**<span class="numbers-python">3</span><br>
+
+            <span class="if-python">def</span> <span class="operation-python">fibonacci</span>(<span class="numbers-python">n</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;listy = []<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;num = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> num &lt; n:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> num == <span class="numbers-python">0</span> <span class="if-python">or</span> num == <span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">listy</span>.<span class="operation-python">append</span>(num)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;answer = listy[num-<span class="numbers-python">2</span>] + listy[num-<span class="numbers-python">1</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">listy</span>.<span class="operation-python">append</span>(answer)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num = num + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> listy<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/introduction-to-regex/problem" target="_blank">Problem 55</a>
+            </div>
+            <div class="exercise-description">
+                You are given a string N.<br>
+                Your task is to verify that N is a floating point number.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">import</span> re<br>
+            cases = <span class="range-python">int</span>(<span class="range-python">input</span>())<br>
+            <span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, cases):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;string = <span class="range-python">input</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="function-operate-python">re</span>.<span class="operation-python">search</span>(<span class="string-python">"(^[+,\-,\.,]?(\d)+?(\.)?\d+$)|(^[+,\-,\.,]?(\d)?(\.)+\d+$)"</span>, string)!=<span class="numbers-python">None</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/python-sort-sort/problem" target="_blank">Problem 56</a>
+            </div>
+            <div class="exercise-description">
+                You are given a spreadsheet that contains a list of<br> N athletes and their details (such as age, height, weight and so on).<br> You are required to sort the data based on the Nth attribute<br> and print the final resulting table.<br> Follow the example given below for better understanding.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            list_arranged = []<br>
+            temp = <span class="numbers-python">0</span><br>
+            temp_arr = []<br>
+            found_row = <span class="numbers-python">0</span><br>
+            <span class="if-python">while</span> <span class="range-python">len</span>(arr) > <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> row <span class="if-python">in</span> arr:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ptr == <span class="numbers-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum = row[k]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = row<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;found_row = ptr<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> minimum > row[k]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;minimum = row[k]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = row<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;found_row = ptr<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">list_arranged</span>.<span class="operation-python">append</span>(temp)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">temp_arr</span>.<span class="operation-python">clear</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> i <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">len</span>(arr)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> i != found_row:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">temp_arr</span>.<span class="operation-python">append</span>(arr[i])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;arr = <span class="function-operate-python">temp_arr</span>.<span class="operation-python">copy</span>()<br>
+
+            <span class="if-python">for</span> result <span class="if-python">in</span> list_arranged:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> num <span class="if-python">in</span> result:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(num, end=<span class="string-python">" "</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>()<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/new-year-chaos/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays" target="_blank">Problem 57</a>
+            </div>
+            <div class="exercise-description">
+                It's New Year's Day and everyone's in line for the Wonderland rollercoaster ride!<br> There are a number of people queued up,<br> and each person wears a sticker indicating their initial position in the queue.<br> Initial positions increment by 1 from 1 at the front of the line to n at the back.<br><br>
+
+                Any person in the queue can bribe the person directly in front of them to swap positions.<br> If two people swap positions,<br> they still wear the same sticker denoting their original places in line.<br> One person can bribe at most two others.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">minimumBribes</span>(<span class="numbers-python">q</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;doneNums = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = <span class="range-python">len</span>(q)-<span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;position = <span class="range-python">len</span>(q)-<span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> ptr > -<span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> q[ptr] != ptr + <span class="numbers-python">1</span> <span class="if-python">and</span> q[ptr] > q[ptr-<span class="numbers-python">1</span>] <span class="if-python">and</span> ptr >= q[ptr] - <span class="numbers-python">3</span> <span class="if-python">and</span> (q[ptr-<span class="numbers-python">1</span>] <span class="if-python">not in</span> doneNums<br> <span class="if-python">or</span> (q[ptr-<span class="numbers-python">1</span>] <span class="if-python">in</span> doneNums <span class="if-python">and</span> <span class="function-operate-python">doneNums</span>.<span class="operation-python">get</span>(q[ptr-<span class="numbers-python">1</span>]) &lt; <span class="numbers-python">3</span>)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position = ptr<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> q[ptr] != ptr + <span class="numbers-python">1</span> <span class="if-python">and</span> q[ptr] &lt; q[ptr-<span class="numbers-python">1</span>] <span class="if-python">and</span> ptr >= q[ptr] - <span class="numbers-python">3</span> <span class="if-python">and</span> (q[ptr-<span class="numbers-python">1</span>] <span class="if-python">not in</span> doneNums<br> <span class="if-python">or</span> (q[ptr-<span class="numbers-python">1</span>] in doneNums <span class="if-python">and</span> <span class="function-operate-python">doneNums</span>.<span class="operation-python">get</span>(q[ptr-<span class="numbers-python">1</span>]) &lt; <span class="numbers-python">3</span>)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> q[ptr-<span class="numbers-python">1</span>] <span class="if-python">not in</span> doneNums:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doneNums[q[ptr-<span class="numbers-python">1</span>]] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> q[ptr-<span class="numbers-python">1</span>] <span class="if-python">in</span> doneNums:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;doneNums[q[ptr-<span class="numbers-python">1</span>]] = <span class="function-operate-python">doneNums</span>.<span class="operation-python">get</span>(q[ptr-<span class="numbers-python">1</span>]) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = q[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q[ptr] = q[ptr-<span class="numbers-python">1</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q[ptr-<span class="numbers-python">1</span>] = temp<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = position + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> q[ptr] != ptr + <span class="numbers-python">1</span> <span class="if-python">and</span> (q[ptr-<span class="numbers-python">1</span>] <span class="if-python">in</span> doneNums <span class="if-python">and</span> <span class="function-operate-python">doneNums</span>.<span class="operation-python">get</span>(q[ptr-<span class="numbers-python">1</span>]) >= <span class="numbers-python">2</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Too chaotic"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr - 1<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="range-python">len</span>(q)-<span class="numbers-python">1</span>,-<span class="numbers-python">1</span>,-<span class="numbers-python">1</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ptr-<span class="numbers-python">1</span> >= <span class="numbers-python">0</span> <span class="if-python">and</span> q[ptr] &lt; q[ptr-<span class="numbers-python">1</span>]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Too chaotic"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(count)<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/minimum-swaps-2/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=arrays" target="_blank">Problem 58</a>
+            </div>
+            <div class="exercise-description">
+                You are given an unordered array consisting of consecutive integers  [1, 2, 3, ..., n]<br> without any duplicates.<br> You are allowed to swap any two elements.<br> You need to find the minimum number of swaps required to sort the array in ascending order.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">minimumSwaps</span>(<span class="numbers-python">arr</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> ptr &lt; <span class="range-python">len</span>(arr):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> arr[ptr] != ptr + <span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp = arr[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;temp2 = arr[ptr]-<span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[ptr] = arr[temp2]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[temp2] = temp<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> count<br>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings" target="_blank">Problem 59</a>
+            </div>
+            <div class="exercise-description">
+                Sherlock considers a string to be valid if all characters of the string appear the same number of times.<br> It is also valid if he can remove just 1 character at 1 index in the string,<br> and the remaining characters will occur the same number of times.<br> Given a string , determine if it is valid. If so, return YES, otherwise return NO.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">isValid</span>(<span class="numbers-python">s</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> s:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch <span class="if-python">in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[ch] = <span class="function-operate-python">dt</span>.<span class="operation-python">get</span>(ch) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[ch] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(dt)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt2 = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> value <span class="if-python">in</span> <span class="function-operate-python">dt</span>.<span class="operation-python">values</span>():<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> value <span class="if-python">in</span> dt2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt2[value] = <span class="function-operate-python">dt2</span>.<span class="operation-python">get</span>(value) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt2[value] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(dt2)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="range-python">len</span>(dt2) == <span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"YES"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> len(dt2) == <span class="numbers-python">2</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;moreThanOne = -<span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> item <span class="if-python">in</span> dt2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> item > <span class="numbers-python">1</span> <span class="if-python">and</span> moreThanOne == -<span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;moreThanOne = item<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> dt2[item] > <span class="numbers-python">1</span> <span class="if-python">and</span> moreThanOne != -<span class="numbers-python">1</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"NO"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"YES"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"NO"</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/sherlock-and-valid-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings" target="_blank">Problem 60</a>
+            </div>
+            <div class="exercise-description">
+                Each time Sunny and Johnny take a trip to the Ice Cream Parlor,<br> they pool their money to buy ice cream.<br> On any given day, the parlor offers a line of flavors.<br> Each flavor has a cost associated with it.<br><br>
+
+                Given the value of  and the  of each flavor for  trips to the Ice Cream Parlor,<br> help Sunny and Johnny choose two distinct flavors<br> such that they spend their entire pool of money during each visit.<br> ID numbers are the 1- based index number associated with a .<br> For each trip to the parlor, print the ID numbers for the two types of ice cream<br> that Sunny and Johnny purchase as two space-separated integers on a new line.<br> You must print the smaller ID first and the larger ID second.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">whatFlavors</span>(<span class="numbers-python">cost</span>, <span class="numbers-python">money</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span> (<span class="numbers-python">0</span>, <span class="range-python">len</span>(cost)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ptr <span class="if-python">not in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[cost[ptr]] = [ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[cost[ptr]] = <span class="function-operate-python">dt</span>.<span class="operation-python">get</span>(ptr) + [ptr]<br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>, <span class="range-python">len</span>(cost)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> (money - cost[ptr]) <span class="if-python">in</span> dt <span class="if-python">and</span> ptr != dt[money-cost[ptr]][<span class="range-python">len</span>(dt[money-cost[ptr]])-<span class="numbers-python">1</span>]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(ptr+<span class="numbers-python">1</span>, dt[money-cost[ptr]][<span class="range-python">len</span>(dt[money-cost[ptr]])-<span class="numbers-python">1</span>]+<span class="numbers-python">1</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">break</span><br><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/pairs/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=search" target="_blank">Problem 61</a>
+            </div>
+            <div class="exercise-description">
+                You will be given an array of integers and a target value.<br> Determine the number of pairs of array elements that have a difference equal to a target value.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">pairs</span>(<span class="numbers-python">k</span>, <span class="numbers-python">arr</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ptr = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">while</span> ptr &lt; <span class="range-python">len</span>(arr):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> arr[ptr] <span class="if-python">not in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[arr[ptr]] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">elif</span> arr[ptr] <span class="if-python">in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[arr[ptr]] = <span class="function-operate-python">dt</span>.<span class="operation-python">get</span>(arr[ptr]) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ptr = ptr + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">0</span>,<span class="range-python">len</span>(arr)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> arr[ptr] - k <span class="if-python">in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(count)<br><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/alternating-characters/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings" target="_blank">Problem 62</a>
+            </div>
+            <div class="exercise-description">
+                You are given a string containing characters A and B only.<br> Your task is to change it into a string such that there are<br> no matching adjacent characters.<br> To do this, you are allowed to delete<br> zero or more characters in the string.<br><br>
+
+                Your task is to find the minimum number of required deletions.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">alternatingCharacters</span>(<span class="numbers-python">s</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;ch = s[<span class="numbers-python">0</span>]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;deletions = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ptr <span class="if-python">in</span> <span class="range-python">range</span>(<span class="numbers-python">1</span>, <span class="range-python">len</span>(s)):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch != s[ptr]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ch = s[ptr]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">continue</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deletions = deletions + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> deletions
+            <br><br>
+        </div>
+    </div>
+    <hr>
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/ctci-making-anagrams/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=strings" target="_blank">Problem 63</a>
+            </div>
+            <div class="exercise-description">
+                Complete the makeAnagram function in the editor below.<br> It must return an integer representing the minimum total characters<br> that must be deleted to make the strings anagrams.<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">makeAnagram</span>(<span class="numbers-python">a</span>, <span class="numbers-python">b</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;setA = <span class="range-python">set</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;setB = <span class="range-python">set</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dtA = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dtB = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> a:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setA</span>.<span class="operation-python">add</span>(ch)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch <span class="if-python">not in</span> dtA:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dtA[ch] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dtA[ch] = <span class="function-operate-python">dtA</span>.<span class="operation-python">get</span>(ch) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> b:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">setB</span>.<span class="operation-python">add</span>(ch)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch <span class="if-python">not in</span> dtB:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dtB[ch] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dtB[ch] = <span class="function-operate-python">dtB</span>.<span class="operation-python">get</span>(ch) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;setC = <span class="function-operate-python">setA</span>.<span class="operation-python">difference</span>(setB).<span class="operation-python">union</span>(<span class="function-operate-python">setB</span>.<span class="operation-python">difference</span>(setA))<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;count = <span class="numbers-python">0</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> setC:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch <span class="if-python">in</span> dtA:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + dtA[ch]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + dtB[ch]<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> dtA:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> ch <span class="if-python">not in</span> setC <span class="if-python">and</span> dtA[ch] != dtB[ch]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + abs(dtA[ch] - dtB[ch])<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span> count
+            <br><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/ctci-ransom-note/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps" target="_blank">Problem 64</a>
+            </div>
+            <div class="exercise-description">
+                Complete the checkMagazine function in the editor below.<br> It must print Yes if the note can be formed using the magazine, or No.<br>
+
+                checkMagazine has the following parameters:<br>
+
+                magazine: an array of strings, each a word in the magazine<br>
+                note: an array of strings, each a word in the ransom note<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">checkMagazine</span>(<span class="arguments-python">magazine</span>, <span class="arguments-python">note</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;dt1 = <span class="range-python">dict</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> word <span class="if-python">in</span> magazine:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> word <span class="if-python">not in</span> dt:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[word] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt[word] = <span class="function-operate-python">dt</span>.<span class="operation-python">get</span>(word) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> word <span class="if-python">in</span> note:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> word <span class="if-python">not in</span> dt1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt1[word] = <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dt1[word] = <span class="function-operate-python">dt1</span>.<span class="operation-python">get</span>(word) + <span class="numbers-python">1</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> word <span class="if-python">in</span> dt1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> word <span class="if-python">not in</span> dt <span class="if-python">or</span> dt1[word] > dt[word]:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"No"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">print</span>(<span class="string-python">"Yes"</span>)
+            <br><br>
+        </div>
+    </div>
+    <hr>
+
+
+    <div class="problem-statement-container">
+        <div class="problem-statement">
+            <div class="exercise-number">
+                <a href="https://www.hackerrank.com/challenges/two-strings/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps" target="_blank">Problem 65</a>
+            </div>
+            <div class="exercise-description">
+                Complete the function twoStrings in the editor below.<br> It should return a string, either YES or NO<br> based on whether the strings share a common substring.<br><br>
+
+                twoStrings has the following parameter(s):<br>
+
+                s1, s2: two strings to analyze .<br><br>
+            </div>
+        </div>
+    </div>
+    <div class="code-outer">
+        <div class="code">
+            <span class="if-python">def</span> <span class="operation-python">twoStrings</span>(<span class="arguments-python">s1</span>, <span class="arguments-python">s2</span>):<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;set1 = <span class="range-python">set</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;set2 = <span class="range-python">set</span>()<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> s1:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">set1</span>.<span class="operation-python">add</span>(ch)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">for</span> ch <span class="if-python">in</span> s2:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function-operate-python">set2</span>.<span class="operation-python">add</span>(ch)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">if</span> <span class="range-python">len</span>(<span class="function-operate-python">set1</span>.<span class="operation-python">intersection</span>(s2)) > <span class="arguments-python">0</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"YES"</span>)<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">else</span>:<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="if-python">return</span>(<span class="string-python">"NO"</span>)<br>
+        </div>
+    </div>
+    <hr>
+
+</div>
+
+</body>
+</html>
